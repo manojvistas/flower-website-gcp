@@ -12,10 +12,11 @@ COPY . /usr/share/nginx/html
 RUN chmod -R 755 /usr/share/nginx/html
 
 # Expose the same port as nginx.conf
-EXPOSE 8095
+EXPOSE 8080
 
 # Start nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
+
 
 
 
